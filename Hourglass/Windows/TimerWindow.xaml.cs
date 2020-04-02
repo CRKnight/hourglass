@@ -1613,9 +1613,7 @@ namespace Hourglass.Windows
                 return;
             }
 
-            this.Timer = new Timer(this.Options);
-            TimerManager.Instance.Add(this.Timer);
-
+            this.Timer.Stop();
             this.SwitchToInputMode();
             this.StopButton.Unfocus();
         }
